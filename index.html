@@ -1,156 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap Stylesheet-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!-- Primary Stylesheet-->
-    <link rel="stylesheet" href="style.css">
-    <title>Jonah Tabb's Portfolio</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap Stylesheet-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<!-- Primary Stylesheet-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Jonah Tabb's Portfolio</title>
 </head>
-<body>
-  <div class="container-md">
-    <nav class="nav">
-        <a class="nav-link active" aria-current="page" href="#">Jonah Tabb</a>
-        <a class="nav-link" href="#">About Me</a>
-        <a class="nav-link" href="#">Projects</a>
-      </nav>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-        </div>
-      </div>
 
-      <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="display-5 fw-bold">Centered hero</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          </div>
-        </div>
-      </div>
+<body data-bs-spy="scroll" data-bs-target="#side-bar-nav" data-bs-offset="20" tabindex="0">
+	<div class="container-fluid">
+		<!-- Nav -->
+		<div class="col-3 px-3 position-fixed" id="sticky-sidebar">
+			<nav class="navbar px-3" id="side-bar-nav">
+				<nav class="nav nav-pills flex-column">
+					<a href="#about" class="nav-link">About</a>
+					<a href="#projects" class="nav-link">Projects</a>
+					<a href="#" class="nav-link">Experience</a>
+					<a href="#" class="nav-link">Contact</a>
+				</nav>
+				</nav>
+			</nav>
+		</div>
+		<div class="position-fixed" id="jonah-tree-logo-container">
+			<img id="jonah-tree-logo" src="/assets/jonah_logo_v1.svg" alt="Tree Logo">
+		</div>
+		<!-- Main Section -->
+		<div>
+			<div class="col offset-3 p-4" id="main">
+				<div class="container">
 
-      <section class="container" id="projects">
-          <figure class="text-center">
-              <h1>Projects</h1>
-          </figure>
-      </section>
+					<div id="about" class="d-flex flex-column align-items-center">
+						<h1 class="pb-2" >Jonah Tabb</h1>
+						<h2 class="pb-4">Web Developer</h2>
+						<p>I am a junior web developer focused on projects that are impactful, good looking, and help people.
+						</p>
+					</div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+					<div class="row my-3">
+						<div class="col m-1"><img class="logo" src="/assets/Javascript Solid Green.svg" alt=""></div>
+						<div class="col m-1"><img class="logo" src="/assets/HTML Solid Green.svg" alt=""></div>
+						<div class="col m-1"><img class="logo" src="/assets/CSS Solid Green.svg" alt=""></div>
+						<div class="col m-1"><img class="logo" src="/assets/Bootstrap Solid Green.svg" alt=""></div>
+						<div class="col m-1"><img class="logo" src="/assets/Figma Solid Green.svg" alt=""></div>
+					</div>
 
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
-        </div>
-      
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-      </div>
+					<h3 class="py-3" id="projects">Projects</h3>
+					<div class="d-flex flex-column">
 
-      <section class="contact">
-        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mgeregya" method="post">
+						<div class="row projects-container my-2">
+							<div class="col-md-3 p-0 m-2">
+								<div class="h-100 project-label">
+									<h3>WEATHER WATCH <br><br> API PROJECT</h3>
+								</div>
+							</div>
+							<div class="col-md p-0 m-2">
+								<div class="row project-description p-2">
+									<div class="col">
+										<p class="project-description-text">This project uses data and images from 2 APIs to dynamically
+											generate cards with information on pollution and weather data from U.S. cities. I designed the
+											layout and color scheme in Figma. Bootstrap enabled me efficiently implement a responsive layout,
+											while using a custom CSS Style to implement my original design from Figma.</p>
+									</div>
+									<div class="col-flex">
+										<div class="row justify-content-evenly">
+											<div class="col"> <a href="https://www.google.com"><img src="/assets/wbpage.svg"
+														alt="View Project Webpage" class="project-icon"> </a> </div>
+											<div class="col">
+												<a href="https://github.com/jonahtabb/api_challenge_2" target="_blank"><img
+														src="/assets/github.svg" alt="View Project Github Page" class="project-icon"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-          <fieldset id="fs-frm-inputs">
-            <label for="full-name">Full Name</label>
-            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+						<div class="row projects-container my-2">
+							<div class="col-md-3 p-0 m-2">
+								<div class="h-100 project-label">
+									<h3>STUDIO GHIBLI <br><br> API PROJECT</h3>
+								</div>
+							</div>
+							<div class="col-md p-0 m-2">
+								<div class="row project-description p-2 h-100">
+									<div class="col">
+										<p class="project-description-text">This project using the Studio Ghibli Api and free movie image
+											resources to to dynamically display images and descriptions about each film. Javascript is used
+											populate cards with a random image from each film.</p>
+									</div>
+									<div class="col-flex">
+										<div class="row justify-content-evenly">
+											<div class="col"> <a href="https://jonahtabb.github.io/api_challenge_1/" target="_blank"><img
+														src="/assets/wbpage.svg" alt="View Project Webpage" class="project-icon"> </a> </div>
+											<div class="col">
+												<a href="https://github.com/jonahtabb/api_challenge_1" target="_blank"><img
+														src="/assets/github.svg" alt="View Project Github Page" class="project-icon"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <label for="email-address">Email Address</label>
-            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-
-            <label for="message">Message</label>
-            <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-          </fieldset>
-          <input type="submit" value="Submit">
-        </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-    </section>
-
-</div>
-
-
-
-
-
-<footer class="footer mt-auto py-3 bg-light">
-  <div class="container">
-    <span class="text-muted">Place sticky footer content here.</span>
-  </div>
-</footer>
-
-
-    <!-- Bootstrap Javascript Required Code-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	<!-- Bootstrap Javascript Required Code-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
