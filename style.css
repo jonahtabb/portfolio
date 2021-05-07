@@ -9,9 +9,9 @@ a{
     font-weight: 700;
 }
 
-
 h1 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 h2{
@@ -21,7 +21,11 @@ h2{
 h3{
     font-weight: 700;
     text-align: center;
+}
 
+h4{
+    font-size: 1rem;
+    text-align: center;
 }
 
 p{
@@ -33,27 +37,33 @@ a:hover{
     color: #307D46;
 }
 
-#sticky-sidebar {
-    /* background-color: #dbdbdb; */
-    height: 100vh;
-}
-
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link a{
     background-color : #307D46;
 }
 
-.nav-link{
-    padding: .5rem .5rem .5rem 1rem;
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: whitesmoke;
 }
 
-#jonah-tree-logo-container{
-    left: 0px; 
-    bottom: 0px;
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(66, 66, 66);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    background-color : #307D46;
+    color: whitesmoke;
+}
+
+#top-nav-bar{
+    -webkit-box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.048); 
+    box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.048);
 }
 
 #jonah-tree-logo{
-    width:25vw;
+    height:25vh;
+    margin: 25px;
 }
+
 
 .logo{
     margin: auto;    

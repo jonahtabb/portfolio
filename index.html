@@ -17,42 +17,73 @@
 	<title>Jonah Tabb's Portfolio</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#side-bar-nav" data-bs-offset="20" tabindex="0">
-	<div class="container-fluid">
-		<!-- Nav -->
-		<div class="col-3 px-3 position-fixed" id="sticky-sidebar">
-			<nav class="navbar px-3" id="side-bar-nav">
-				<nav class="nav nav-pills flex-column">
-					<a href="#about" class="nav-link">About</a>
-					<a href="#projects" class="nav-link">Projects</a>
-					<a href="#" class="nav-link">Experience</a>
-					<a href="#" class="nav-link">Contact</a>
-				</nav>
-				</nav>
-			</nav>
-		</div>
-		<div class="position-fixed" id="jonah-tree-logo-container">
-			<img id="jonah-tree-logo" src="/assets/jonah_logo_v1.svg" alt="Tree Logo">
-		</div>
+<body data-bs-spy="scroll" data-bs-target="#top-nav-bar" data-bs-offset="10" tabindex="0">
+	<div class="row">
+
 		<!-- Main Section -->
-		<div>
-			<div class="col offset-3 p-4" id="main">
-				<div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="top-nav-bar">
 
-					<div id="about" class="d-flex flex-column align-items-center">
-						<h1 class="pb-2" >Jonah Tabb</h1>
-						<h2 class="pb-4">Web Developer</h2>
-						<p>I am a junior web developer focused on projects that are impactful, good looking, and help people.
-						</p>
-					</div>
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+					aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-					<div class="row my-3">
-						<div class="col m-1"><img class="logo" src="/assets/Javascript Solid Green.svg" alt=""></div>
-						<div class="col m-1"><img class="logo" src="/assets/HTML Solid Green.svg" alt=""></div>
-						<div class="col m-1"><img class="logo" src="/assets/CSS Solid Green.svg" alt=""></div>
-						<div class="col m-1"><img class="logo" src="/assets/Bootstrap Solid Green.svg" alt=""></div>
-						<div class="col m-1"><img class="logo" src="/assets/Figma Solid Green.svg" alt=""></div>
-					</div>
+
+
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+
+						<button class="btn btn-outline-success me-5" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample"
+						role="button" aria-controls="offcanvasExample">Contact</button>
+
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#about">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#experience">Experience</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#thoughts">Thoughts</a>
+						</li>
+
+
+					</ul>
+
+
+				</div>
+			</div>
+		</nav>
+
+		<div class="col p-4" id="main">
+			<div class="container">
+
+				<div id="about" class="d-flex flex-column align-items-center header-section">
+					<h1 class="pb-2">Jonah Tabb</h1>
+					<p>I am a junior web developer focused on projects that are impactful, good looking, and have a positive
+						impact.
+					</p>
+					<img id="jonah-tree-logo" src="/assets/jonah_logo_v1.svg" height="100px">
+				</div>
+
+				<div class="row my-3">
+					<div class="col m-1"><img class="logo" src="/assets/Javascript Solid Green.svg" alt=""></div>
+					<div class="col m-1"><img class="logo" src="/assets/HTML Solid Green.svg" alt=""></div>
+					<div class="col m-1"><img class="logo" src="/assets/CSS Solid Green.svg" alt=""></div>
+					<div class="col m-1"><img class="logo" src="/assets/Bootstrap Solid Green.svg" alt=""></div>
+					<div class="col m-1"><img class="logo" src="/assets/Figma Solid Green.svg" alt=""></div>
+				</div>
+				<!-- Github Contributions -->
+				<!-- More about the GitHub chart Api here: https://github.com/2016rshah/githubchart-api -->
+				<!-- The number in the url is simply a hex color that make the base color for the chart. -->
+				<h4 class="py-3" id="git-hub-activity">GitHub Contributions (2020 - 2021)</h3>
+					<img src="http://ghchart.rshah.org/307d46/jonahtabb" alt="jonahtabb's Github chart" width="100%">
 
 					<h3 class="py-3" id="projects">Projects</h3>
 					<div class="d-flex flex-column">
@@ -60,7 +91,7 @@
 						<div class="row projects-container my-2">
 							<div class="col-md-3 p-0 m-2">
 								<div class="h-100 project-label">
-									<h3>WEATHER WATCH <br><br> API PROJECT</h3>
+									<h3>WEATHER WATCH</h3>
 								</div>
 							</div>
 							<div class="col-md p-0 m-2">
@@ -88,7 +119,7 @@
 						<div class="row projects-container my-2">
 							<div class="col-md-3 p-0 m-2">
 								<div class="h-100 project-label">
-									<h3>STUDIO GHIBLI <br><br> API PROJECT</h3>
+									<h3>STUDIO GHIBLI FILMS EXPLORER</h3>
 								</div>
 							</div>
 							<div class="col-md p-0 m-2">
@@ -113,8 +144,74 @@
 						</div>
 
 					</div>
-				</div>
+					<!-- Experience -->
+					<div class="experience-section" id="experience"></div>
+					<!-- Thoughts -->
+					<div class="thoughts-section" id="thoughts">
+						<div class="accordion" id="accordionPanelsStayOpenExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+										Thoughts Peripherally or Directly Related To Coding
+									</button>
+								</h2>
+								<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+									<div class="accordion-body">
+										<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+										Accordion Item #2
+									</button>
+								</h2>
+								<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+
+
+
+					</div>
 			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- Contact Form -->
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasExampleLabel">Contact Jonah Tabb</h5>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+
+			<form action="https://formspree.io/f/mgeregya"></form>
+			<div class="form-floating my-2">
+				<input type="text" class="form-control" id="name" placeholder="Full Name">
+				<label for="name">Name</label>
+			</div>
+
+			<div class="form-floating my-2">
+				<input type="email" class="form-control" id="email" placeholder="name@example.com">
+				<label for="email">Email address</label>
+			</div>
+
+			<div class="form-floating my-2">
+				<textarea class="form-control" placeholder="message" id="message" style="height: 200px"></textarea>
+				<label for="message">Message</label>
+			</div>
+
+			<button class="btn btn-success my-2" type="submit" data-bs-toggle="offcanvas" href="#" role="button">Send
+				Message</button>
+
 		</div>
 	</div>
 
