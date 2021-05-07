@@ -8,24 +8,26 @@
 	<!-- Bootstrap Stylesheet-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-	<!-- Primary Stylesheet-->
+	<!-- Google Fonts Stylesheet-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
+	<!-- Primary Stylesheet-->
 	<link rel="stylesheet" href="style.css">
 	<title>Jonah Tabb's Portfolio</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#top-nav-bar" data-bs-offset="10" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#top-nav-bar" data-bs-offset="150" tabindex="0">
 	<div class="row">
 
 		<!-- Main Section -->
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="top-nav-bar">
 
 			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-					aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -34,8 +36,8 @@
 
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
 
-						<button class="btn btn-outline-success me-5" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample"
-						role="button" aria-controls="offcanvasExample">Contact</button>
+						<button class="btn btn-outline-success me-5" type="button" data-bs-toggle="offcanvas"
+							href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Contact</button>
 
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="#about">About</a>
@@ -64,9 +66,10 @@
 		<div class="col p-4" id="main">
 			<div class="container">
 
-				<div id="about" class="d-flex flex-column align-items-center header-section">
+				<div id="about" class="d-flex flex-column align-items-center section-top-pad-adjust">
 					<h1 class="pb-2">Jonah Tabb</h1>
-					<p>I am a junior web developer focused on projects that are impactful, good looking, and have a positive
+					<p>I am a junior web developer focused on projects that are impactful, good looking, and have a
+						positive
 						impact.
 					</p>
 					<img id="jonah-tree-logo" src="/assets/jonah_logo_v1.svg" height="100px">
@@ -79,101 +82,176 @@
 					<div class="col m-1"><img class="logo" src="/assets/Bootstrap Solid Green.svg" alt=""></div>
 					<div class="col m-1"><img class="logo" src="/assets/Figma Solid Green.svg" alt=""></div>
 				</div>
-				<!-- Github Contributions -->
+
+
+				<!-- Projects -->
+					<div class="section-top-pad-adjust" id="projects">
+						<h3 class="py-3">Projects</h3>
+						<div class="d-flex flex-column">
+
+							<div class="row projects-container my-2">
+								<div class="col-md-3 p-0 m-2">
+									<div class="h-100 project-label">
+										<h3>WEATHER WATCH</h3>
+									</div>
+								</div>
+								<div class="col-md p-0 m-2">
+									<div class="row project-description p-2">
+										<div class="col">
+											<p class="project-description-text">This project uses data and images from 2
+												APIs to dynamically
+												generate cards with information on pollution and weather data from U.S.
+												cities. I designed the
+												layout and color scheme in Figma. Bootstrap enabled me efficiently
+												implement a responsive layout,
+												while using a custom CSS Style to implement my original design from
+												Figma.</p>
+										</div>
+										<div class="col-flex">
+											<div class="row justify-content-evenly">
+
+												<div class="col"> <a href="https://weatherwatch-abbf7.web.app/"><img src="/assets/wbpage.svg"
+															alt="View Project Webpage" class="project-icon"> </a> 
+												</div>
+
+												<div class="col"> <button class="preview-project project-icon"
+													data-bs-container="body" data-bs-toggle="popover" data-bs-placement="auto" data-bs-html="true" data-bs-content="<img src ='assets\weather_watch_app_thumbnail.jpg' width='100%'>"><img src="assets\preview-project.svg"
+													alt="View Project Webpage"> </button> 
+												</div>
+
+												<div class="col">
+													<a href="https://github.com/jonahtabb/api_challenge_2" target="_blank"><img
+															src="/assets/github.svg" alt="View Project Github Page" class="project-icon"></a>
+												</div>
+
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row projects-container my-2">
+								<div class="col-md-3 p-0 m-2">
+									<div class="h-100 project-label">
+										<h3>STUDIO GHIBLI FILMS EXPLORER</h3>
+									</div>
+								</div>
+								<div class="col-md p-0 m-2">
+									<div class="row project-description p-2 h-100">
+										<div class="col">
+											<p class="project-description-text">This project using the Studio Ghibli Api
+												and free movie image
+												resources to to dynamically display images and descriptions about each
+												film. Javascript is used
+												populate cards with a random image from each film.</p>
+										</div>
+										<div class="col-flex">
+
+											<div class="row justify-content-evenly">
+												<div class="col"> <a href="https://jonahtabb.github.io/api_challenge_1/" target="_blank"><img
+															src="/assets/wbpage.svg" alt="View Project Webpage" class="project-icon"> </a> 
+												</div>
+												<div class="col"> <button class="preview-project project-icon"
+													data-bs-container="body" data-bs-toggle="popover" data-bs-placement="auto" data-bs-html="true" data-bs-content="<img src ='assets\ghibli_app_thumbnail.jpg' width='100%'>"><img src="assets\preview-project.svg"
+													alt="View Project Webpage"> </button> 
+												</div>
+												<div class="col">
+													<a href="https://github.com/jonahtabb/api_challenge_1" target="_blank"><img
+															src="/assets/github.svg" alt="View Project Github Page" class="project-icon"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row projects-container my-2">
+								<div class="col-md-3 p-0 m-2">
+									<div class="h-100 project-label">
+										<h3>Other Projects</h3>
+									</div>
+								</div>
+								<div class="col-md p-0 m-2">
+									<div class="row project-description p-2 h-100">
+										<div class="col">
+											<ul>
+												<li>
+													<a href="https://jonahtabb.github.io/static_layout/" target="_blank">Static Website Layout</a>
+												</li>
+												<li>
+													<a href="https://codepen.io/dafka11/full/zYNvPWG" target="_blank">CSS Creature</a>
+												</li>
+											</ul>
+										</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+
+					<!-- Experience -->
+					<div class="container section-top-pad-adjust" id="experience">
+						<h3 class="py-3">Experience</h3>
+										<!-- Github Contributions -->
 				<!-- More about the GitHub chart Api here: https://github.com/2016rshah/githubchart-api -->
 				<!-- The number in the url is simply a hex color that make the base color for the chart. -->
 				<h4 class="py-3" id="git-hub-activity">GitHub Contributions (2020 - 2021)</h3>
 					<img src="http://ghchart.rshah.org/307d46/jonahtabb" alt="jonahtabb's Github chart" width="100%">
-
-					<h3 class="py-3" id="projects">Projects</h3>
-					<div class="d-flex flex-column">
-
-						<div class="row projects-container my-2">
-							<div class="col-md-3 p-0 m-2">
-								<div class="h-100 project-label">
-									<h3>WEATHER WATCH</h3>
-								</div>
-							</div>
-							<div class="col-md p-0 m-2">
-								<div class="row project-description p-2">
-									<div class="col">
-										<p class="project-description-text">This project uses data and images from 2 APIs to dynamically
-											generate cards with information on pollution and weather data from U.S. cities. I designed the
-											layout and color scheme in Figma. Bootstrap enabled me efficiently implement a responsive layout,
-											while using a custom CSS Style to implement my original design from Figma.</p>
-									</div>
-									<div class="col-flex">
-										<div class="row justify-content-evenly">
-											<div class="col"> <a href="https://www.google.com"><img src="/assets/wbpage.svg"
-														alt="View Project Webpage" class="project-icon"> </a> </div>
-											<div class="col">
-												<a href="https://github.com/jonahtabb/api_challenge_2" target="_blank"><img
-														src="/assets/github.svg" alt="View Project Github Page" class="project-icon"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="row projects-container my-2">
-							<div class="col-md-3 p-0 m-2">
-								<div class="h-100 project-label">
-									<h3>STUDIO GHIBLI FILMS EXPLORER</h3>
-								</div>
-							</div>
-							<div class="col-md p-0 m-2">
-								<div class="row project-description p-2 h-100">
-									<div class="col">
-										<p class="project-description-text">This project using the Studio Ghibli Api and free movie image
-											resources to to dynamically display images and descriptions about each film. Javascript is used
-											populate cards with a random image from each film.</p>
-									</div>
-									<div class="col-flex">
-										<div class="row justify-content-evenly">
-											<div class="col"> <a href="https://jonahtabb.github.io/api_challenge_1/" target="_blank"><img
-														src="/assets/wbpage.svg" alt="View Project Webpage" class="project-icon"> </a> </div>
-											<div class="col">
-												<a href="https://github.com/jonahtabb/api_challenge_1" target="_blank"><img
-														src="/assets/github.svg" alt="View Project Github Page" class="project-icon"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
-					<!-- Experience -->
-					<div class="experience-section" id="experience"></div>
 					<!-- Thoughts -->
-					<div class="thoughts-section" id="thoughts">
+					<div class="container section-top-pad-adjust" id="thoughts">
+						<h3 class="py-3">Thoughts</h3>
 						<div class="accordion" id="accordionPanelsStayOpenExample">
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-										Thoughts Peripherally or Directly Related To Coding
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+										aria-controls="panelsStayOpen-collapseOne">
+										Farming and Functions
 									</button>
 								</h2>
-								<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+								<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+									aria-labelledby="panelsStayOpen-headingOne">
 									<div class="accordion-body">
-										<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+										<strong>This is the first item's accordion body.</strong> It is shown by
+										default, until the collapse plugin adds the appropriate classes that we use to
+										style each element. These classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any of this with custom
+										CSS or overriding our default variables. It's also worth noting that just about
+										any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+										aria-controls="panelsStayOpen-collapseTwo">
 										Accordion Item #2
 									</button>
 								</h2>
-								<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+								<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+									aria-labelledby="panelsStayOpen-headingTwo">
 									<div class="accordion-body">
-										<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+										<strong>This is the second item's accordion body.</strong> It is hidden by
+										default, until the collapse plugin adds the appropriate classes that we use to
+										style each element. These classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any of this with custom
+										CSS or overriding our default variables. It's also worth noting that just about
+										any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
 									</div>
 								</div>
 							</div>
-							
+
 						</div>
 
 
@@ -186,32 +264,33 @@
 	</div>
 
 	<!-- Contact Form -->
-	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvas-label">
 		<div class="offcanvas-header">
-			<h5 class="offcanvas-title" id="offcanvasExampleLabel">Contact Jonah Tabb</h5>
+			<h5 class="offcanvas-title" id="offcanvas-label">Contact</h5>
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body">
 
-			<form action="https://formspree.io/f/mgeregya"></form>
-			<div class="form-floating my-2">
-				<input type="text" class="form-control" id="name" placeholder="Full Name">
-				<label for="name">Name</label>
-			</div>
+			<form action="https://formspree.io/f/mgeregya" method="POST">
+				<div class="form-floating my-2">
+					<input type="text" name="_name" class="form-control" id="name" placeholder="Full Name">
+					<label for="name">Name</label>
+				</div>
 
-			<div class="form-floating my-2">
-				<input type="email" class="form-control" id="email" placeholder="name@example.com">
-				<label for="email">Email address</label>
-			</div>
+				<div class="form-floating my-2">
+					<input type="email" name="_replyto" class="form-control" id="email" placeholder="name@example.com">
+					<label for="email">Email address</label>
+				</div>
 
-			<div class="form-floating my-2">
-				<textarea class="form-control" placeholder="message" id="message" style="height: 200px"></textarea>
-				<label for="message">Message</label>
-			</div>
+				<div class="form-floating my-2">
+					<textarea name="message" class="form-control" placeholder="message" id="message"
+						style="height: 200px"></textarea>
+					<label for="message">Message</label>
+				</div>
 
-			<button class="btn btn-success my-2" type="submit" data-bs-toggle="offcanvas" href="#" role="button">Send
-				Message</button>
-
+				<button class="btn btn-success my-2" type="submit" data-bs-toggle="offcanvas" href="#" role="button">Send
+					Message</button>
+			</form>
 		</div>
 	</div>
 
@@ -220,6 +299,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
 		crossorigin="anonymous"></script>
+
+	<!-- Index.js -->
+	<script src="index.js"></script>
 </body>
 
 </html>

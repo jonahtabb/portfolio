@@ -39,6 +39,7 @@ a:hover{
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link a{
     background-color : #307D46;
+    border: 1px solid #307D46;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
@@ -49,9 +50,12 @@ a:hover{
     color: rgb(66, 66, 66);
 }
 
+.nav-link{
+    font-size: .8em;
+}
+
 .navbar-light .navbar-nav .nav-link:hover{
-    background-color : #307D46;
-    color: whitesmoke;
+    border: 1px solid #307D46;
 }
 
 #top-nav-bar{
@@ -64,6 +68,9 @@ a:hover{
     margin: 25px;
 }
 
+.section-top-pad-adjust{
+    padding-top: 50px;
+}
 
 .logo{
     margin: auto;    
@@ -90,7 +97,7 @@ a:hover{
 
 .project-description{
     border-width: 1px;
-    border-color: #307d4686;
+    border-color: rgba(47, 121, 68, 0.541);
     border-style: solid;
     border-radius: 10px;
     /* min-height: 200px ; */
@@ -108,4 +115,26 @@ a:hover{
 
 .project-icon:hover{
     filter: opacity(.75);
+}
+
+.accordion-button:not(.collapsed)
+{
+    background-color: rgba(47, 121, 68, 0.25);
+    color:rgba(47, 121, 68, 1);
+    font-weight: bolder;
+}
+.accordion-button.collapsed{
+    background-color: rgba(47, 121, 68, 0.25);
+    color:rgba(47, 121, 68, 1);
+}
+
+.popover{
+    width: 80%;
+    -webkit-box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.048); 
+    box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.048);
+}
+
+.preview-project{
+    background-color: transparent;
+    border: none;
 }
