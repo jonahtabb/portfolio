@@ -18,47 +18,47 @@
 	<title>Jonah Tabb's Portfolio</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#top-nav-bar" data-bs-offset="170" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#top-nav-bar" data-bs-offset="10" tabindex="0">
+
+	<!-- Nav Section -->
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top px-5" id="top-nav-bar">
+
+		<button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar-toggle"
+			aria-controls="nav-bar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="nav-bar-toggle">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+
+				<button class="btn btn-outline-success mx-auto" type="button" data-bs-toggle="offcanvas"
+					href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Contact</button>
+
+				<li class="nav-item ms-3 me-2">
+					<a class="nav-link px-2" aria-current="page" href="#about">About</a>
+				</li>
+
+				<li class="nav-item mx-2">
+					<a class="nav-link px-2" href="#projects">Projects</a>
+				</li>
+
+				<li class="nav-item mx-2">
+					<a class="nav-link px-2" href="#experience">Experience</a>
+				</li>
+
+				<li class="nav-item mx-2">
+					<a class="nav-link px-2" href="#thoughts">Thoughts</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+	<!-- Main Content Section -->
 	<div class="container-sm">
-		<!-- Nav Section -->
-		
-		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="top-nav-bar">
-			
-			<button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse"
-				data-bs-target="#nav-bar-toggle" aria-controls="nav-bar-toggle" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="nav-bar-toggle">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+		<div class="col" id="main">
 
-					<button class="btn btn-outline-success mx-auto" type="button" data-bs-toggle="offcanvas"
-						href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Contact</button>
-
-					<li class="nav-item ms-3 me-2">
-						<a class="nav-link px-2" aria-current="page" href="#about">About</a>
-					</li>
-
-					<li class="nav-item mx-2">
-						<a class="nav-link px-2" href="#projects">Projects</a>
-					</li>
-
-					<li class="nav-item mx-2">
-						<a class="nav-link px-2" href="#experience">Experience</a>
-					</li>
-
-					<li class="nav-item mx-2">
-						<a class="nav-link px-2" href="#thoughts">Thoughts</a>
-					</li>
-				</ul>
-			</div>
-			
-		</nav>
-		<!-- Main Content Section -->
-		<div class="col section-top-pad-adjust" id="main">
-			
-				<!-- About Section -->
-				<div id="about">
+			<!-- About Section -->
+			<div id="about" class="section-top-pad-adjust">
 				<div class="d-flex flex-column align-items-center">
 					<h1 class="pb-2">Jonah Tabb</h1>
 					<p>I am a junior web developer focused on projects that are impactful, good looking, and have a
@@ -76,111 +76,121 @@
 					<div class="col m-1"><img class="logo" src="assets/Figma Solid Green.svg" alt=""></div>
 				</div>
 			</div>
-				<!-- Projects Section -->
-				<div class="section-top-pad-adjust" id="projects">
-					<h3 class="py-3">Projects</h3>
-					<div class="d-flex flex-column">
+			<!-- Projects Section -->
+			<div class="section-top-pad-adjust" id="projects">
+				<h3 class="py-3">Projects</h3>
+				<div class="d-flex flex-column">
 
-						<div class="row-cols-auto my-2 gx-0">
-							<div class="col p-0 m-2">
-								<div class="h-100 project-label">
-									<h3>WEATHER WATCH</h3>
-								</div>
-							</div>
-							<div class="col p-0 m-2">
-								<div class="row project-description p-2 gx-0">
-									<div class="col p-2">
-										<p class="project-description-text">This project uses data and images from 2
-											APIs to dynamically
-											generate cards with information on pollution and weather data from U.S.
-											cities. I designed the
-											layout and color scheme in Figma. Bootstrap enabled me efficiently
-											implement a responsive layout,
-											while using a custom CSS Style to implement my original design from
-											Figma.</p>
-									</div>
-									<div class="col-flex">
-										<div class="row justify-content-evenly">
-
-											<div class="col"> <a href="https://weatherwatch-abbf7.web.app/" target="_blank"><img
-														src="assets\wbpage.svg" alt="View Project Webpage" class="project-icon"> </a>
-											</div>
-
-											<div class="col"> <button class="preview-project project-icon" data-bs-container="body"
-													data-bs-toggle="popover" data-bs-placement="auto" data-bs-html="true"
-													data-bs-content="<img src ='assets\weather_watch_app_thumbnail.jpg' width='100%'>"><img
-														src="assets\preview-project.svg" alt="View Project Webpage"> </button>
-											</div>
-
-											<div class="col">
-												<a href="https://github.com/jonahtabb/api_challenge_2" target="_blank"><img
-														src="assets\github.svg" alt="View Project Github Page" class="project-icon"></a>
-											</div>
-										</div>
-									</div>
-								</div>
+					<div class="row-cols-auto my-2 gx-0">
+						<div class="col p-0 m-2">
+							<div class="h-100 project-label">
+								<h3>WEATHER WATCH</h3>
 							</div>
 						</div>
-
-						<div class="row-cols-auto my-2 gx-0">
-							<div class="col p-0 m-2">
-								<div class="h-100 project-label">
-									<h3>STUDIO GHIBLI FILMS EXPLORER</h3>
+						<div class="col p-0 m-2">
+							<div class="row project-description p-2 gx-0">
+								<div class="col p-2">
+									<p class="project-description-text">This project uses data and images from 2
+										APIs to dynamically
+										generate cards with information on pollution and weather data from U.S.
+										cities. I designed the
+										layout and color scheme in Figma. Bootstrap enabled me efficiently
+										implement a responsive layout,
+										while using a custom CSS Style to implement my original design from
+										Figma.</p>
 								</div>
-							</div>
-							<div class="col p-0 m-2">
-								<div class="row project-description p-2 h-100 gx-0">
-									<div class="col">
-										<p class="project-description-text">This project using the Studio Ghibli Api
-											and free movie image
-											resources to to dynamically display images and descriptions about each
-											film. Javascript is used
-											populate cards with a random image from each film.</p>
-									</div>
-									<div class="col-flex">
+								<div class="col-flex">
+									<div class="row justify-content-evenly">
 
-										<div class="row justify-content-evenly">
-											<div class="col"> <a href="https://jonahtabb.github.io/api_challenge_1/" target="_blank"><img
-														src="assets\wbpage.svg" alt="View Project Webpage" class="project-icon"> </a>
-											</div>
-											<div class="col"> <button class="preview-project project-icon" data-bs-container="body"
-													data-bs-toggle="popover" data-bs-placement="auto" data-bs-html="true"
-													data-bs-content="<img src ='assets\ghibli_app_thumbnail.jpg' width='100%'>"><img
-														src="assets\preview-project.svg" alt="View Project Webpage"> </button>
-											</div>
-											<div class="col">
-												<a href="https://github.com/jonahtabb/api_challenge_1" target="_blank"><img
-														src="assets\github.svg" alt="View Project Github Page" class="project-icon"></a>
-											</div>
+										<div class="col"> <a href="https://weatherwatch-abbf7.web.app/"
+												target="_blank"><img src="assets\wbpage.svg" alt="View Project Webpage"
+													class="project-icon"> </a>
+										</div>
+
+										<div class="col"> <button class="preview-project project-icon"
+												data-bs-container="body" data-bs-toggle="popover"
+												data-bs-placement="auto" data-bs-html="true"
+												data-bs-content="<img src ='assets\weather_watch_app_thumbnail.jpg' width='100%'>"><img
+													src="assets\preview-project.svg" alt="View Project Webpage">
+											</button>
+										</div>
+
+										<div class="col">
+											<a href="https://github.com/jonahtabb/api_challenge_2" target="_blank"><img
+													src="assets\github.svg" alt="View Project Github Page"
+													class="project-icon"></a>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row-cols-auto my-2 gx-0">
-							<div class="col p-0 m-2">
-								<div class="h-100 project-label">
-									<h3>Other Projects</h3>
-								</div>
-							</div>
-							<div class="col p-0 m-2">
-								<div class="row project-description p-2 h-100 gx-0">
-									<div class="col">
-										<ul>
-											<li>
-												<a href="https://jonahtabb.github.io/static_layout/" target="_blank">Static Website Layout</a>
-											</li>
-											<li>
-												<a href="https://codepen.io/dafka11/full/zYNvPWG" target="_blank">CSS Creature</a>
-											</li>
-										</ul>
-									</div>
-
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<div class="row-cols-auto my-2 gx-0">
+						<div class="col p-0 m-2">
+							<div class="h-100 project-label">
+								<h3>STUDIO GHIBLI FILMS EXPLORER</h3>
+							</div>
+						</div>
+						<div class="col p-0 m-2">
+							<div class="row project-description p-2 h-100 gx-0">
+								<div class="col">
+									<p class="project-description-text">This project using the Studio Ghibli Api
+										and free movie image
+										resources to to dynamically display images and descriptions about each
+										film. Javascript is used
+										populate cards with a random image from each film.</p>
+								</div>
+								<div class="col-flex">
+
+									<div class="row justify-content-evenly">
+										<div class="col"> <a href="https://jonahtabb.github.io/api_challenge_1/"
+												target="_blank"><img src="assets\wbpage.svg" alt="View Project Webpage"
+													class="project-icon"> </a>
+										</div>
+										<div class="col"> <button class="preview-project project-icon"
+												data-bs-container="body" data-bs-toggle="popover"
+												data-bs-placement="auto" data-bs-html="true"
+												data-bs-content="<img src ='assets\ghibli_app_thumbnail.jpg' width='100%'>"><img
+													src="assets\preview-project.svg" alt="View Project Webpage">
+											</button>
+										</div>
+										<div class="col">
+											<a href="https://github.com/jonahtabb/api_challenge_1" target="_blank"><img
+													src="assets\github.svg" alt="View Project Github Page"
+													class="project-icon"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-cols-auto my-2 gx-0">
+						<div class="col p-0 m-2">
+							<div class="h-100 project-label">
+								<h3>Other Projects</h3>
+							</div>
+						</div>
+						<div class="col p-0 m-2">
+							<div class="row project-description p-2 h-100 gx-0">
+								<div class="col">
+									<ul>
+										<li>
+											<a href="https://jonahtabb.github.io/static_layout/" target="_blank">Static
+												Website Layout</a>
+										</li>
+										<li>
+											<a href="https://codepen.io/dafka11/full/zYNvPWG" target="_blank">CSS
+												Creature</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
 				</div>
+			</div>
 			<!-- Experience -->
 			<div class="section-top-pad-adjust" id="experience">
 				<h3 class="py-3">Experience</h3>
@@ -188,8 +198,9 @@
 				<!-- More about the GitHub chart Api here: https://github.com/2016rshah/githubchart-api -->
 				<!-- The number in the url is simply a hex color that make the base color for the chart. -->
 				<h4 class="py-3" id="git-hub-activity">GitHub Contributions (2020 - 2021)</h3>
-					<a href="https://github.com/jonahtabb" target="_blank"><img src="http://ghchart.rshah.org/307d46/jonahtabb"
-							alt="jonahtabb's Github chart" width="100%"></a>
+					<a href="https://github.com/jonahtabb" target="_blank"><img
+							src="http://ghchart.rshah.org/307d46/jonahtabb" alt="jonahtabb's Github chart"
+							width="100%"></a>
 			</div>
 			<!-- Thoughts -->
 			<div class="section-top-pad-adjust" id="thoughts">
@@ -200,7 +211,7 @@
 							<button class="accordion-button" type="button" data-bs-toggle="collapse"
 								data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
 								aria-controls="panelsStayOpen-collapseOne">
-								🥕Farming and Functions👨‍💻 
+								🥕Farming and Functions👨‍💻
 							</button>
 						</h2>
 						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
@@ -241,7 +252,8 @@
 					<label for="message">Message</label>
 				</div>
 
-				<button class="btn btn-success my-2" type="submit" data-bs-toggle="offcanvas" href="#" role="button">Send
+				<button class="btn btn-success my-2" type="submit" data-bs-toggle="offcanvas" href="#"
+					role="button">Send
 					Message</button>
 			</form>
 		</div>
