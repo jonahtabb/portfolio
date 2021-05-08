@@ -51,7 +51,7 @@ a:hover{
 }
 
 .nav-link{
-    font-size: .8em;
+    font-size: .9em;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
@@ -69,7 +69,7 @@ a:hover{
 }
 
 .section-top-pad-adjust{
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .logo{
@@ -129,7 +129,8 @@ a:hover{
 }
 
 .popover{
-    width: 80%;
+    width: 500px;
+    max-width: 80%;
     -webkit-box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.048); 
     box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.048);
 }
