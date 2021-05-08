@@ -19,43 +19,44 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#top-nav-bar" data-bs-offset="170" tabindex="0">
-	<div class="row">
+	<div class="container-sm">
 		<!-- Nav Section -->
+		
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="top-nav-bar">
-			<div class="container-fluid">
-				<button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+			
+			<button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse"
+				data-bs-target="#nav-bar-toggle" aria-controls="nav-bar-toggle" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="nav-bar-toggle">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
 
-						<button class="btn btn-outline-success me-5" type="button" data-bs-toggle="offcanvas"
-							href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Contact</button>
+					<button class="btn btn-outline-success mx-auto" type="button" data-bs-toggle="offcanvas"
+						href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Contact</button>
 
-						<li class="nav-item mx-2">
-							<a class="nav-link" aria-current="page" href="#about">About</a>
-						</li>
+					<li class="nav-item ms-3 me-2">
+						<a class="nav-link px-2" aria-current="page" href="#about">About</a>
+					</li>
 
-						<li class="nav-item mx-2">
-							<a class="nav-link" href="#projects">Projects</a>
-						</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link px-2" href="#projects">Projects</a>
+					</li>
 
-						<li class="nav-item mx-2">
-							<a class="nav-link" href="#experience">Experience</a>
-						</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link px-2" href="#experience">Experience</a>
+					</li>
 
-						<li class="nav-item mx-2">
-							<a class="nav-link" href="#thoughts">Thoughts</a>
-						</li>
-					</ul>
-				</div>
+					<li class="nav-item mx-2">
+						<a class="nav-link px-2" href="#thoughts">Thoughts</a>
+					</li>
+				</ul>
 			</div>
+			
 		</nav>
 		<!-- Main Content Section -->
 		<div class="col section-top-pad-adjust" id="main">
-			<div class="container">
+			
 				<!-- About Section -->
 				<div id="about">
 				<div class="d-flex flex-column align-items-center">
@@ -80,15 +81,15 @@
 					<h3 class="py-3">Projects</h3>
 					<div class="d-flex flex-column">
 
-						<div class="row projects-container my-2">
-							<div class="col-md-3 p-0 m-2">
+						<div class="row-cols-auto my-2 gx-0">
+							<div class="col p-0 m-2">
 								<div class="h-100 project-label">
 									<h3>WEATHER WATCH</h3>
 								</div>
 							</div>
-							<div class="col-md p-0 m-2">
-								<div class="row project-description p-2">
-									<div class="col">
+							<div class="col p-0 m-2">
+								<div class="row project-description p-2 gx-0">
+									<div class="col p-2">
 										<p class="project-description-text">This project uses data and images from 2
 											APIs to dynamically
 											generate cards with information on pollution and weather data from U.S.
@@ -121,14 +122,14 @@
 							</div>
 						</div>
 
-						<div class="row projects-container my-2">
-							<div class="col-md-3 p-0 m-2">
+						<div class="row-cols-auto my-2 gx-0">
+							<div class="col p-0 m-2">
 								<div class="h-100 project-label">
 									<h3>STUDIO GHIBLI FILMS EXPLORER</h3>
 								</div>
 							</div>
-							<div class="col-md p-0 m-2">
-								<div class="row project-description p-2 h-100">
+							<div class="col p-0 m-2">
+								<div class="row project-description p-2 h-100 gx-0">
 									<div class="col">
 										<p class="project-description-text">This project using the Studio Ghibli Api
 											and free movie image
@@ -156,14 +157,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="row projects-container my-2">
-							<div class="col-md-3 p-0 m-2">
+						<div class="row-cols-auto my-2 gx-0">
+							<div class="col p-0 m-2">
 								<div class="h-100 project-label">
 									<h3>Other Projects</h3>
 								</div>
 							</div>
-							<div class="col-md p-0 m-2">
-								<div class="row project-description p-2 h-100">
+							<div class="col p-0 m-2">
+								<div class="row project-description p-2 h-100 gx-0">
 									<div class="col">
 										<ul>
 											<li>
@@ -213,7 +214,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+
 
 	<!-- Contact Form -->
 	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvas-label">
