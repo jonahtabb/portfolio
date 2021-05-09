@@ -152,13 +152,15 @@ a.dark-theme:hover{
     border-color: whitesmoke !important;
 }
 
-/* #dark-switch-container{
-    display: block;
-} */
+#profile-pic{
+    position: relative;
+    max-width: 100%;
+    max-height: 175px;
+}
 
 #jonah-tree-logo{
     height:25vh;
-    margin: 25px;
+    margin: 20px;
 }
 
 .section-top-pad-adjust{
