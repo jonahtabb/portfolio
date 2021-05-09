@@ -91,9 +91,16 @@ a.dark-theme:hover{
     color: rgba(47, 121, 68, .55);
     border-color: rgba(47, 121, 68, .55);
 }
+.navbar-light .navbar-toggler.dark-theme{
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
 
 .navbar-light .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 121, 68, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler-icon.dark-theme{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='whitesmoke' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .btn-outline-success.dark-theme{
@@ -120,7 +127,7 @@ a.dark-theme:hover{
     background-color: rgb(75, 75, 75);
 }
 .accordion-item.dark-theme{
-    border-color:rgb(87, 87, 87);
+    border-color:whitesmoke;
 }
 
 /* Custom CSS Style */
@@ -135,6 +142,7 @@ a.dark-theme:hover{
 
 .nav-link-custom{
     font-size: .9em;
+    margin-top: 5px;
 }
 .nav-link-custom.dark-theme{
     color: rgb(241, 241, 241) !important;
@@ -205,6 +213,7 @@ a.dark-theme:hover{
 .project-icon{
     margin: auto;    
     display: block;
+    max-width: 50px;
 }
 
 .project-icon:hover{
@@ -216,10 +225,26 @@ a.dark-theme:hover{
     background-color: rgba(47, 121, 68, 0.25);
     color:rgba(47, 121, 68, 1);
     font-weight: bolder;
+    
 }
+.accordion-button:not(.collapsed).dark-theme
+{
+    background-color: rgb(75,75,75);
+    color:whitesmoke;
+    font-weight: bolder;
+    border-color: whitesmoke;
+
+}
+
 .accordion-button.collapsed{
     background-color: rgba(47, 121, 68, 0.25);
     color:rgba(47, 121, 68, 1);
+}
+.accordion-button.collapsed.dark-theme{
+    background-color: rgb(75,75,75);
+    color:whitesmoke;
+    font-weight: bolder;
+    border-color: whitesmoke;
 }
 
 .popover{
