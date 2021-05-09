@@ -3,6 +3,10 @@ body{
     color: rgb(66, 66, 66);
     position: relative;
 }
+body.dark-theme{
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+}
 
 a{
     color:rgb(66, 66, 66);
@@ -23,6 +27,7 @@ h3{
     text-align: center;
 }
 
+
 h4{
     font-size: 1rem;
     text-align: center;
@@ -37,7 +42,38 @@ a:hover{
     color: #307D46;
 }
 
+a.dark-theme{
+    color: whitesmoke;
+}
+
+a.dark-theme:hover{
+    color: rgb(228, 255, 236);
+}
+
 /* Bootstrap Style Overrides */
+.form-check-input:checked{
+    background-color: #307D46;
+    border-color: #307D46; 
+}
+
+.form-check-input:focus {
+    border-color: #307D46;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(48 125 70 / 25%);
+}
+
+.form-check-input{
+    border: 1px solid rgba(48,125,70,.25);
+}
+
+.form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='seagreen'/></svg>");
+}
+.form-switch .form-check-input.dark-theme:focus {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='whitesmoke'/></svg>");
+}
+
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link a{
     background-color : #307D46;
     border: 1px solid #307D46;
@@ -45,14 +81,6 @@ a:hover{
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
     color: whitesmoke;
-}
-
-.navbar-light .navbar-nav .nav-link{
-    color: rgb(66, 66, 66);
-}
-
-.nav-link{
-    font-size: .9em;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
@@ -68,8 +96,18 @@ a:hover{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 121, 68, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.btn-outline-success.dark-theme{
+    background-color: transparent;
+    color: whitesmoke;
+    font-weight: 500;
+    border-color: whitesmoke;
+}
+
 .btn-outline-success:hover{
     background-color: rgba(47, 121, 68, 1)
+}
+.btn-outline-success.dark-theme:hover{
+    border-color: rgba(47, 121, 68, 1);
 }
 
 .accordion-button:focus{
@@ -78,12 +116,37 @@ a:hover{
 .accordion-button:not(.collapsed)::after{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%307d46'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+.accordion-body.dark-theme{
+    background-color: rgb(75, 75, 75);
+}
+.accordion-item.dark-theme{
+    border-color:rgb(87, 87, 87);
+}
 
 /* Custom CSS Style */
 #top-nav-bar{
     -webkit-box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.048); 
     box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.048);
+    background-color: white;
 }
+#top-nav-bar.dark-theme{
+    background-color:rgb(75,75,75)
+}
+
+.nav-link-custom{
+    font-size: .9em;
+}
+.nav-link-custom.dark-theme{
+    color: rgb(241, 241, 241) !important;
+}
+
+.nav-link-custom:hover.dark-theme{
+    border-color: whitesmoke !important;
+}
+
+/* #dark-switch-container{
+    display: block;
+} */
 
 #jonah-tree-logo{
     height:25vh;
@@ -113,9 +176,10 @@ a:hover{
     border-style: solid;
     border-radius: 10px;
     background-color: #307D46;
-
-    /* min-height: 200px ; */
 }
+.project-label.dark-theme{
+    color:whitesmoke;
+    }
 
 .feature-project-desc-container{
     min-height: 500px;
@@ -126,7 +190,7 @@ a:hover{
     border-color: rgba(47, 121, 68, 0.541);
     border-style: solid;
     border-radius: 10px;
-    min-height: 300px;
+    min-height: 350px;
 }
 
 #other-projects{
@@ -177,4 +241,16 @@ a:hover{
 .footer-text{
     margin: auto;
     padding: 1rem;
+}
+
+.offcanvas-header.dark-theme{
+    background-color:rgb(75, 75, 75)  ;
+}
+
+.offcanvas-body.dark-theme{
+    background-color:rgb(75, 75, 75)  ;
+}
+
+.form-control.dark-theme{
+    background-color:rgb(56, 56, 56)  ;
 }
