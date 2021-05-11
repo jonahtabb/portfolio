@@ -152,6 +152,11 @@ a.dark-theme:hover{
     border-color: whitesmoke !important;
 }
 
+.personal-header{
+    padding-top: 50px;
+    min-height: 80vh;
+}
+
 #profile-pic{
     position: relative;
     max-width: 100%;
