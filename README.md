@@ -1,4 +1,4 @@
-#Welcome to Jonah Tabb's Portfolio
+# Welcome to Jonah Tabb's Portfolio
 
 I am a full-stack web-developer who love solving problems with Javascript.
 
