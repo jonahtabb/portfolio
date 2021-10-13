@@ -1,8 +1,4 @@
-# Hello, I am Jonah Tabb from United States.
 
-I am a full-stack web-developer.
-
-Do you have a project you want a hand with? Let me know.  Right now I am looking for projects using Javascript, React, Typescript, and Ruby.
 
 [![LinkedIn](	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonahtabb/)
 
