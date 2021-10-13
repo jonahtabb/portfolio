@@ -184,6 +184,9 @@ a.dark-theme:hover{
     height:9vw;
     }
 
+.logo-label{
+    font-size: .8rem;
+}
 
 .project-label{
     display: flex;
