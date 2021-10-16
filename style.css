@@ -182,8 +182,13 @@ a.dark-theme:hover{
     display: block;
     min-height: 3rem;
     height:9vw;
+    transition-duration: .56s;
+    transition-timing-function:ease;
     }
-
+.logo:hover{
+    transform: scale(1.04, 1.04) translate(0px, -5px);
+    filter: drop-shadow( 0px 2px 3px rgba(0, 0, 0, .3)) ;
+}
 .logo-label{
     font-size: .8rem;
 }
